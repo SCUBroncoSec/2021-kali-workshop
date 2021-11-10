@@ -1,0 +1,4 @@
+FROM alpine:latest
+RUN apk add --no-cache netcat-openbsd python3
+COPY server.py server.py
+ENTRYPOINT [ "nc -l -p 1337 -e python3 server.py" ]

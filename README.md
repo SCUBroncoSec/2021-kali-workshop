@@ -1,1 +1,1 @@
-# 2021-kali-workshop
+# Broncosec Intro to Kali Linux Workshop
