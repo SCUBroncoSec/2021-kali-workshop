@@ -1,0 +1,10 @@
+version: "3"
+services:
+  sanity-check:
+    build: ./sanity-check
+    ports:
+     - "1337:1337"
+  big-data:
+    build: ./big-data
+    ports:
+      - "7331:1337"
