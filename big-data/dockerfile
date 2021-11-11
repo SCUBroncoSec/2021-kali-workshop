@@ -1,0 +1,6 @@
+FROM alpine:latest
+RUN apk add --no-cache netcat-openbsd
+COPY flag.txt flag.txt
+COPY run.sh run.sh
+RUN chmod +x run.sh
+ENTRYPOINT [ "./run.sh" ]
