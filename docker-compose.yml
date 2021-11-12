@@ -1,10 +1,12 @@
 version: "3"
 services:
   sanity-check:
+    image: devinbhatt/kaliworkshop-sanity-check
     build: ./sanity-check
     ports:
      - "1337:1337"
   big-data:
+    image: devinbhatt/kaliworkshop-big-data
     build: ./big-data
     ports:
-      - "7331:1337"
+      - "7331:7331"
